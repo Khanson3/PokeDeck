@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_border"
+    android:orientation="vertical">
+
+    <android.widget.Button
+        android:id="@+id/btnBackDecks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/spinner_border"
+        android:text="@string/back"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="60sp"
+        android:layout_marginTop="40dp"
+        android:shadowColor="@color/blue"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="10"
+        android:text="@string/decks"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/switchEditDecks"
+        app:layout_constraintStart_toEndOf="@+id/btnBackDecks"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switchEditDecks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/edit_mode"
+        android:textColor="@color/black"
+        android:theme="@style/ToggleSwitchTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <android.widget.Button
+            android:id="@+id/btnDeck1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/spinner_border"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/imageViewPlusSign1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:contentDescription="@string/plus_sign"
+            app:srcCompat="@mipmap/drop" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewDeck1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/total"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <android.widget.Button
+            android:id="@+id/btnDeck2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/spinner_border"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewDeck2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3"
+        tools:layout_editor_absoluteX="211dp" />
+
+    <android.widget.Button
+        android:id="@+id/btnDeck3"
+        android:layout_width="150sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/spinner_border"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDeck1" />
+
+    <TextView
+        android:id="@+id/textViewDeck3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/btnDeck3"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeck3" />
+
+    <android.widget.Button
+        android:id="@+id/btnDeck4"
+        android:layout_width="150sp"
+        android:layout_height="80sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/spinner_border"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDeck2" />
+
+    <TextView
+        android:id="@+id/textViewDeck4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/btnDeck4"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeck4" />
+
+    <android.widget.Button
+        android:id="@+id/btnDeck5"
+        android:layout_width="150sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/spinner_border"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDeck3" />
+
+    <TextView
+        android:id="@+id/textViewDeck5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/btnDeck5"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeck5" />
+
+    <android.widget.Button
+        android:id="@+id/btnDeck6"
+        android:layout_width="150sp"
+        android:layout_height="80sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/spinner_border"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDeck4" />
+
+    <TextView
+        android:id="@+id/textViewDeck6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/btnDeck6"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeck6" />
+
+    <android.widget.Button
+        android:id="@+id/btnDeck7"
+        android:layout_width="150sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/spinner_border"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDeck5" />
+
+    <TextView
+        android:id="@+id/textViewDeck7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/btnDeck7"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeck7" />
+
+    <android.widget.Button
+        android:id="@+id/btnDeck8"
+        android:layout_width="150sp"
+        android:layout_height="80sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/spinner_border"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDeck6" />
+
+    <TextView
+        android:id="@+id/textViewDeck8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/btnDeck8"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeck8" />
+
+    <android.widget.Button
+        android:id="@+id/btnDeck9"
+        android:layout_width="150sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/spinner_border"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDeck7" />
+
+    <TextView
+        android:id="@+id/textViewDeck9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/btnDeck9"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeck9" />
+
+    <android.widget.Button
+        android:id="@+id/btnDeck10"
+        android:layout_width="150sp"
+        android:layout_height="80sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/spinner_border"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDeck8" />
+
+    <TextView
+        android:id="@+id/textViewDeck10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/btnDeck10"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeck10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

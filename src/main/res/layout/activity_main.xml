@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_border"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="325sp"
+        android:layout_height="78sp"
+        android:layout_marginTop="40sp"
+        android:shadowColor="@color/blue"
+        android:shadowDx="22"
+        android:shadowDy="22"
+        android:shadowRadius="22"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/yellow"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/btnDecks"
+        android:layout_width="220sp"
+        android:layout_height="104sp"
+        android:layout_marginTop="140sp"
+        android:background="@drawable/button_border"
+        android:onClick="activityDeckCollection"
+        android:text="@string/decks"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <android.widget.Button
+        android:id="@+id/btnSettings"
+        android:layout_width="220sp"
+        android:layout_height="104sp"
+        android:layout_marginBottom="100sp"
+        android:background="@drawable/button_border"
+        android:onClick="activitySettings"
+        android:text="@string/settings"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDecks" />
+</androidx.constraintlayout.widget.ConstraintLayout>

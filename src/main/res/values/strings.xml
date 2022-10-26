@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PokeDeck</string>
+    <string name="decks">Decks</string>
+    <string name="settings">Settings</string>
+    <string name="currency">Currency:</string>
+    <string name="back">Back</string>
+    <string name="spinner_dropdown_arrow">Spinner Dropdown Arrow</string>
+    <string name="total">Total:</string>
+    <string name="edit_mode">Edit Mode</string>
+    <string name="plus_sign">Plus Sign</string>
+</resources>
